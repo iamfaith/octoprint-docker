@@ -1,0 +1,10 @@
+[Unit]
+Description=Connect printer to OctoPrint automatically
+BindsTo=dev-%i.device
+After=dev-%i.device
+
+[Service]
+Type=oneshot
+User=faith
+RemainAfterExit=yes
+ExecStart=/home/faith/octoprint-docker/connect_octoprint.py 

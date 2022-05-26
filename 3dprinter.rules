@@ -1,0 +1,2 @@
+KERNEL=="tty*", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", \
+    TAG+="systemd", ENV{SYSTEMD_WANTS}="octoprint_connect@%k.service"
